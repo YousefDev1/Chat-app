@@ -1,2 +1,2 @@
 # Chat-app
-Chat app using Html and Scss
+Using Html and Scss
