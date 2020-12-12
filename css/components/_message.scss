@@ -1,0 +1,71 @@
+$msg-width: 300;
+
+.message{
+    padding: 10px;
+    .from{
+        background-color: darkgreen;
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        width: $msg-width;
+        max-width: 400px;
+        min-width: 150px;
+        margin-right: auto;
+
+        padding: 10px;
+        .from-content{
+            color: white;
+            margin-bottom: 10px;
+        }
+        .from-time{
+            position: absolute;
+            right: 5px;
+            bottom: 0px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: darkgreen;
+            height: 15px;
+            width: 15px;
+            left: -5px;
+            bottom: 10px;
+            transform: rotate(45deg);
+        }
+
+       
+    }
+
+    .to{
+        background-color: cadetblue;
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        width: $msg-width;
+        max-width: 400px;
+        min-width: 150px;
+        margin-left: auto;
+
+        padding: 10px;
+        .to-content{
+            color: white;
+            margin-bottom: 10px;
+        }
+        .to-time{
+            position: absolute;
+            right: 5px;
+            bottom: 0px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: cadetblue;
+            height: 15px;
+            width: 15px;
+            right: -5px;
+            bottom: 10px;
+            transform: rotate(45deg);
+        }
+    }
+}
+

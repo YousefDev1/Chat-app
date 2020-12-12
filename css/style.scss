@@ -1,0 +1,67 @@
+@font-face{
+    src: url('../files/Tajawal-Medium.ttf');
+    font-family: 'Tajawal';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.root{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 58, 109);
+    padding: 0px 20px 0px 20px;
+    .container{
+        background-color: white;
+        height: 90%;
+        width: 900px;
+        max-width: 900px;
+        min-width: 300px;
+        border-radius: 10px;
+        display: flex;
+        font-family: 'Tajawal';
+        overflow: hidden;
+        
+        .left{
+            overflow: hidden;
+            width: 340px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            @import "./components/search";
+            .contacts{
+                overflow: auto;
+            }
+            @import "./components/contact";
+           
+
+            
+        }
+        .right{
+            display: flex;
+            background-color: gray;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            overflow: hidden;
+            @import "./components/active-contact";
+            .messages{
+                height: 100%;
+                background-color: white;
+                overflow: auto;
+                @import "./components/message";
+            }
+            @import "./components/write-message";
+        }
+        
+    }
+}
+

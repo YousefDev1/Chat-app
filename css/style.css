@@ -1,0 +1,347 @@
+@font-face {
+  src: url("../files/Tajawal-Medium.ttf");
+  font-family: 'Tajawal';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #033a6d;
+  padding: 0px 20px 0px 20px;
+}
+
+.root .container {
+  background-color: white;
+  height: 90%;
+  width: 900px;
+  max-width: 900px;
+  min-width: 300px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Tajawal';
+  overflow: hidden;
+}
+
+.root .container .left {
+  overflow: hidden;
+  width: 340px;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.root .container .left .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 15px;
+  -webkit-box-shadow: 0px 10px 10px rgba(180, 180, 180, 0.4);
+          box-shadow: 0px 10px 10px rgba(180, 180, 180, 0.4);
+  z-index: 2;
+}
+
+.root .container .left .search .search-box {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #969696;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.root .container .left .search .search-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #969696;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: auto;
+}
+
+@media (max-width: 455px) {
+  .root .container .left .search .search-box {
+    font-size: 15px;
+  }
+  .root .container .left .search .search-btn {
+    font-size: 15px;
+  }
+}
+
+.root .container .left .contacts {
+  overflow: auto;
+}
+
+.root .container .left .contact {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  padding-left: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.root .container .left .contact:hover {
+  background-color: #F0F0F0;
+}
+
+.root .container .left .contact h3 {
+  margin-left: 10px;
+}
+
+.root .container .left .contact img {
+  height: 50px;
+}
+
+.root .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.root .container .right .active-contant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  background-color: white;
+  -webkit-box-shadow: 0px 10px 10px rgba(180, 180, 180, 0.4);
+          box-shadow: 0px 10px 10px rgba(180, 180, 180, 0.4);
+  z-index: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .container .right .active-contant .back-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #969696;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.root .container .right .active-contant .back-btn:hover {
+  background-color: #E5E5E5;
+  -webkit-box-shadow: 0px 0px 10px rgba(180, 180, 180, 0.2);
+          box-shadow: 0px 0px 10px rgba(180, 180, 180, 0.2);
+}
+
+.root .container .right .active-contant .contact-info {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .container .right .active-contant .contact-info .contact-title {
+  padding-right: 10px;
+}
+
+.root .container .right .active-contant .contact-info .contact-img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  .root .container .right .active-contant .contact-info .contact-title {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 480px) {
+  .root .container .right .active-contant .contact-info .contact-title {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 455px) {
+  .root .container .right .active-contant .contact-info .contact-img {
+    height: 30px;
+    width: 30px;
+  }
+  .root .container .right .active-contant .contact-info .contact-title {
+    font-size: 70%;
+  }
+  .root .container .right .active-contant .back-btn {
+    font-size: 15px;
+  }
+}
+
+.root .container .right .messages {
+  height: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+.root .container .right .messages .message {
+  padding: 10px;
+}
+
+.root .container .right .messages .message .from {
+  background-color: darkgreen;
+  position: relative;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300;
+  max-width: 400px;
+  min-width: 150px;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.root .container .right .messages .message .from .from-content {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.root .container .right .messages .message .from .from-time {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+}
+
+.root .container .right .messages .message .from::before {
+  content: '';
+  position: absolute;
+  background-color: darkgreen;
+  height: 15px;
+  width: 15px;
+  left: -5px;
+  bottom: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.root .container .right .messages .message .to {
+  background-color: cadetblue;
+  position: relative;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300;
+  max-width: 400px;
+  min-width: 150px;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.root .container .right .messages .message .to .to-content {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.root .container .right .messages .message .to .to-time {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+}
+
+.root .container .right .messages .message .to::before {
+  content: '';
+  position: absolute;
+  background-color: cadetblue;
+  height: 15px;
+  width: 15px;
+  right: -5px;
+  bottom: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.root .container .right .write-message {
+  background-color: white;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px -5px 10px rgba(180, 180, 180, 0.4);
+          box-shadow: 0px -5px 10px rgba(180, 180, 180, 0.4);
+}
+
+.root .container .right .write-message .msg-text {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #969696;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.root .container .right .write-message .send-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #969696;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: auto;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,74 @@
+.active-contant{
+    display: flex;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba($color: #b4b4b4, $alpha: 0.4) ;
+    z-index: 2;
+    align-items: center;
+    .back-btn{
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #969696;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        transition: 0.2s;
+        &:hover{
+            background-color: #E5E5E5;
+            box-shadow: 0px 0px 10px rgba($color: #b4b4b4, $alpha: 0.2) ;
+        }
+    }
+    .contact-info{
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contact-title{
+            padding-right: 10px;
+        }
+        .contact-img{
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+        }
+
+
+    }
+
+    @media(max-width: 540px)
+    {
+        .contact-info{
+            .contact-title{
+                font-size: 110%;
+            }
+        }
+    }
+
+    @media(max-width: 480px)
+    {
+        .contact-info{
+            .contact-title{
+                font-size: 100%;
+            }
+        }
+    }
+
+    @media(max-width: 455px) {
+        .contact-info{
+            .contact-img{
+                height: 30px;
+                width: 30px;
+            }
+            .contact-title{
+                font-size: 70%;
+            }
+        }
+        .back-btn{
+            font-size: 15px;
+        }
+    }
+}

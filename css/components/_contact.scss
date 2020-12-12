@@ -1,0 +1,25 @@
+.contact{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 15px;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    transition: 0.2s;
+    &:hover{
+        background-color: #F0F0F0;
+    }
+
+    h3{
+        margin-left: 10px;
+    }
+
+    img{
+        height: 50px;
+    }
+
+}
