@@ -5,3 +5,9 @@ This is a chat website design using
    <li>Html</li>
    <li>Scss</li>
 </ul>
+
+**Download :**
+
+**Using Git**
+
+      `git clone https://github.com/YousefDev1/Chat-app.git`
